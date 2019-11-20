@@ -28,6 +28,34 @@
                 body{
                         color: #fefefe;
                 }
+						button {
+			background: #f9d543;
+			border: 0;
+			border-radius: 99px;
+			color: white;
+			cursor: pointer;
+			font-weight: 500;
+			line-height: 1.2;
+			white-space: nowrap;
+			text-decoration: none;
+			text-align: center;
+			min-width: 200px;
+			margin: 2em 0;
+			padding: 15px 45px;
+			font-size: 100%;
+			font-family: inherit;
+		}
+		button:hover,
+		button:focus {
+			background: #bc9805;
+		}
+		button:focus {
+			outline: 1px solid #fff;
+			outline-offset: -4px;
+		}
+		button:active {
+			transform: scale(0.99);
+		}
         </style>
 
 </head>
@@ -36,6 +64,7 @@
 <div class="error-middle">
         <h1>Error 510 - Not Extended</h1>
         <p>The policy for accessing the resource has not been met in the request. The server should send back all the information necessary for the client to issue an extended request. It is outside the scope of this specification to specify how the extensions inform the client.</p>
+		<button type="button" onclick="javascript:history.back()">Go Back</button>
 </div>
 </body>
 </html>

@@ -28,6 +28,36 @@
 		body{
 			color: #fefefe;
 		}
+		
+		button {
+			background: #c92918;
+			border: 0;
+			border-radius: 99px;
+			color: white;
+			cursor: pointer;
+			font-weight: 500;
+			line-height: 1.2;
+			white-space: nowrap;
+			text-decoration: none;
+			text-align: center;
+			min-width: 200px;
+			margin: 2em 0;
+			padding: 15px 45px;
+			font-size: 100%;
+			font-family: inherit;
+		}
+		button:hover,
+		button:focus {
+			background: #ff988e;
+		}
+		button:focus {
+			outline: 1px solid #fff;
+			outline-offset: -4px;
+		}
+		button:active {
+			transform: scale(0.99);
+		}
+		
 	</style>
 </head>
 
@@ -35,6 +65,7 @@
 <div class="error-middle">
 	<h1>Error 411 - Length Required</h1>
 	<p>The 411 (Length Required) status code indicates that the server refuses to accept the request without a defined Content-Length. The client MAY repeat the request if it adds a valid Content-Length header field containing the length of the message body in the request message.</p>
+	<button type="button" onclick="javascript:history.back()">Go Back</button>
 </div>
 </body>
 </html>

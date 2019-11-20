@@ -28,6 +28,36 @@
 		body{
 			color: #fefefe;
 		}
+		
+		button {
+			background: #c92918;
+			border: 0;
+			border-radius: 99px;
+			color: white;
+			cursor: pointer;
+			font-weight: 500;
+			line-height: 1.2;
+			white-space: nowrap;
+			text-decoration: none;
+			text-align: center;
+			min-width: 200px;
+			margin: 2em 0;
+			padding: 15px 45px;
+			font-size: 100%;
+			font-family: inherit;
+		}
+		button:hover,
+		button:focus {
+			background: #ff988e;
+		}
+		button:focus {
+			outline: 1px solid #fff;
+			outline-offset: -4px;
+		}
+		button:active {
+			transform: scale(0.99);
+		}
+		
 	</style>
 </head>
 
@@ -35,6 +65,7 @@
 <div class="error-middle">
 	<h1>Error 407 - Proxy Authentication Required</h1>
 	<p>The 407 (Proxy Authentication Required) status code is similar to 401 (Unauthorized), but it indicates that the client needs to authenticate itself in order to use a proxy. The proxy MUST send a Proxy-Authenticate header field containing a challenge applicable to that proxy for the target resource. The client MAY repeat the request with a new or replaced Proxy-Authorization header field.</p>
+	<button type="button" onclick="javascript:history.back()">Go Back</button>
 </div>
 </body>
 </html>

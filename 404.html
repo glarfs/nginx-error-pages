@@ -28,6 +28,36 @@
 		body{
 			color: #fefefe;
 		}
+		
+		button {
+			background: #c92918;
+			border: 0;
+			border-radius: 99px;
+			color: white;
+			cursor: pointer;
+			font-weight: 500;
+			line-height: 1.2;
+			white-space: nowrap;
+			text-decoration: none;
+			text-align: center;
+			min-width: 200px;
+			margin: 2em 0;
+			padding: 15px 45px;
+			font-size: 100%;
+			font-family: inherit;
+		}
+		button:hover,
+		button:focus {
+			background: #ff988e;
+		}
+		button:focus {
+			outline: 1px solid #fff;
+			outline-offset: -4px;
+		}
+		button:active {
+			transform: scale(0.99);
+		}
+		
 	</style>
 </head>
 
@@ -35,6 +65,7 @@
 <div class="error-middle">
 	<h1>Error 404 - Not Found</h1>
 	<p>The 404 (Not Found) status code indicates that the origin server did not find a current representation for the target resource or is not willing to disclose that one exists. A 404 status code does not indicate whether this lack of representation is temporary or permanent; the 410 (Gone) status code is preferred over 404 if the origin server knows, presumably through some configurable means, that the condition is likely to be permanent.</p>
+	<button type="button" onclick="javascript:history.back()">Go Back</button>
 </div>
 </body>
 </html>

@@ -28,6 +28,36 @@
 		body{
 			color: #fefefe;
 		}
+		
+		button {
+			background: #c92918;
+			border: 0;
+			border-radius: 99px;
+			color: white;
+			cursor: pointer;
+			font-weight: 500;
+			line-height: 1.2;
+			white-space: nowrap;
+			text-decoration: none;
+			text-align: center;
+			min-width: 200px;
+			margin: 2em 0;
+			padding: 15px 45px;
+			font-size: 100%;
+			font-family: inherit;
+		}
+		button:hover,
+		button:focus {
+			background: #ff988e;
+		}
+		button:focus {
+			outline: 1px solid #fff;
+			outline-offset: -4px;
+		}
+		button:active {
+			transform: scale(0.99);
+		}
+		
 	</style>
 </head>
 
@@ -35,6 +65,7 @@
 <div class="error-middle">
 	<h1>Error 415 - Unsupported Media Type</h1>
 	<p>The 415 (Unsupported Media Type) status code indicates that the origin server is refusing to service the request because the payload is in a format not supported by this method on the target resource. The format problem might be due to the request's indicated Content-Type or Content-Encoding, or as a result of inspecting the data directly.</p>
+	<button type="button" onclick="javascript:history.back()">Go Back</button>
 </div>
 </body>
 </html>

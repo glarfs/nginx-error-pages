@@ -28,6 +28,36 @@
 		body{
 			color: #fefefe;
 		}
+		
+		button {
+			background: #c92918;
+			border: 0;
+			border-radius: 99px;
+			color: white;
+			cursor: pointer;
+			font-weight: 500;
+			line-height: 1.2;
+			white-space: nowrap;
+			text-decoration: none;
+			text-align: center;
+			min-width: 200px;
+			margin: 2em 0;
+			padding: 15px 45px;
+			font-size: 100%;
+			font-family: inherit;
+		}
+		button:hover,
+		button:focus {
+			background: #ff988e;
+		}
+		button:focus {
+			outline: 1px solid #fff;
+			outline-offset: -4px;
+		}
+		button:active {
+			transform: scale(0.99);
+		}
+		
 	</style>
 </head>
 
@@ -35,6 +65,7 @@
 <div class="error-middle">
 	<h1>Error 425 - Too Early</h1>
 	<p>A 425 (Too Early) status code indicates that the server is unwilling to risk processing a request that might be replayed. User agents that send a request in early data are expected to retry the request when receiving a 425 (Too Early) response status code. A user agent SHOULD retry automatically, but any retries MUST NOT be sent in early data.</p>
+	<button type="button" onclick="javascript:history.back()">Go Back</button>
 </div>
 </body>
 </html>
