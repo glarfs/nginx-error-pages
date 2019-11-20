@@ -29,6 +29,34 @@
 		body{
 			color: #fefefe;
 		}
+				button {
+			background: #a8b8bf;
+			border: 0;
+			border-radius: 99px;
+			color: white;
+			cursor: pointer;
+			font-weight: 500;
+			line-height: 1.2;
+			white-space: nowrap;
+			text-decoration: none;
+			text-align: center;
+			min-width: 200px;
+			margin: 2em 0;
+			padding: 15px 45px;
+			font-size: 100%;
+			font-family: inherit;
+		}
+		button:hover,
+		button:focus {
+			background: #557585;
+		}
+		button:focus {
+			outline: 1px solid #fff;
+			outline-offset: -4px;
+		}
+		button:active {
+			transform: scale(0.99);
+		}
 	</style>
 </head>
 
@@ -36,6 +64,7 @@
 <div class="error-middle">
 	<h1>Status $ERROR_CODE - $ERROR_NAME</h1>
 	<p>$ERROR_DESC</p>
+	<button type="button" onclick="javascript:history.back()">Go Back</button>
 </div>
 </body>
 </html>
